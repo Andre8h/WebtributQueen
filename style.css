@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+
+.container{
+
+    width: cover;
+    height: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url(https://www.queenonline.com/global/assets/modules/site/images/gallery/1984_008.jpg);
+    background-size: 100% ;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+body{ width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url(https://www.queenonline.com/global/assets/modules/site/images/gallery/1984_008.jpg);
+    background-size: 100% ;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+footer{
+    background-color: black;
+    background-size: auto;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    
+}
+
+footer h3{
+    float: center;
+}
+footer form{
+    float: center;
+    padding-right: 45 px;
+}
+
+
+/* Barra de navegacion Superior derecha */ 
+nav{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 0;
+    justify-content: space-between;
+
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+
+}
+/* Finalizacion Barra de navegacion Superior derecha */ 
+
+/* Menu Pagina Inicio */
+.Partes{
+    width: 80%;
+    margin: auto;
+
+}
+.Partes-Historia{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 2.3px;
+}
+.Partes-Historia img{
+    height: 400px;
+    width: 211px;
+}
+
+.Layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.Layer:hover{
+    background:rgba(226, 0, 0, 0.7) ;
+}
+
+.Layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.Layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/* Finalizacion Menu Pagina Inicio*/
+
+
+/* articulo - Discografia*/
+
+.site-container{
+    margin: 2rem auto;
+    max-width: calc(100%-80px);
+}
+
+.article-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(265px,1fr));
+    gap: 2rem;
+}
+
+.article-image{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.article-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.article-card{
+    background: black;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.article-card:hover{
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+    cursor: pointer;
+}
+
+.article-content{
+    padding: 2rem;
+    width: 100%;
+}
+
+
+/*Finalizacion articulos - Discografia  */
+
+/* articulo 2 - Filmografia  */
+
+.site-container2{
+    margin: 2rem auto;
+    max-width: calc(100%-80px);
+}
+
+.article-container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(520px,1fr));
+    gap: 2rem;
+}
+
+.article-container2 iframe{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+    
+    
+}
+
+.article-card2{
+    background: black;
+    border-radius: 20px;
+    transition: 0.3s;
+    height: 500px;
+    width: 635px;
+}
+
+.article-card2:hover{
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+    cursor: pointer;
+}
+
+.article-content2{
+    padding: 2rem;
+    width: 100%;
+}
+
+.article-content2 h3{
+    width: 30%;
+    height: 30%;
+}
+
+
+
+
+/*Finalizacion articulos 2 - Filmografia */
+
+/* articulo 3 - Momentos Iconicos*/
+
+.site-container3{
+    margin: 2rem auto;
+    max-width: calc(100%-80px);
+}
+
+.article-container3{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(520px,1fr));
+    gap: 2rem;
+}
+
+.article-container3 iframe{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+    
+    
+}
+
+.article-card3{
+    background: black;
+    border-radius: 20px;
+    transition: 0.3s;
+    height: 500px;
+    width: 635px;
+}
+
+.article-card3:hover{
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+    cursor: pointer;
+}
+
+.article-content3{
+    padding: 2rem;
+    width: 100%;
+}
+
+.article-content3 h3{
+    width: 50%;
+    height: 30%;
+}
+
+
+/*Finalizacion articulos 3 - Momentos Iconicos  */
+
+/* Textos */
+h1{
+    color: blanchedalmond;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h2{
+    color: blanchedalmond;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h3{
+    color: blanchedalmond;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h4{
+    color: blanchedalmond;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+p{
+    color: blanchedalmond;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* Inicio media Query*/
+
+@media (min-width:480px){
+    .Biografias p{
+        font-size: 2rem;
+        float: center;
+    }
+
+    .Biografias h4{
+        font-size: 2.25rem;
+        float: center;
+    }
+
+    .Historia p{
+        font-size: 2rem;
+        float: center;
+    }
+
+    .Historia h4{
+        font-size: 2.25rem;
+        float: center;
+    }
+
+    .article-card3{
+        display: center;
+        width: 1000px;
+    }
+
+    .article-content3 iframe{
+        width: 1000px;
+        float: center;
+    }
+
+    .article-card2{
+        width: 1000px;
+    }
+
+    .article-content2 iframe{
+        width: 1000px;
+
+    }
+
+}
+
+@media (min-width:768px) {
+
+    .Biografias p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+        float: center;
+    }
+
+    .Biografias h4{
+        font-size: 1.70rem;
+        float: center;
+    }
+
+    .site-container{
+        max-width: 700px;
+    }
+ 
+    .article-card{
+        display: grid;
+        grid-template-rows: 220px ifr;
+    }
+
+    .site-container2{
+        max-width: 700px;
+    }
+
+    .article-card{
+        display: grid;
+        grid-template-rows: 220px ifr;
+    }
+
+    
+}
+
+
+@media  (min-width:1024px) {
+
+    .Biografias p{
+        font-size: 1rem;
+        float: center;
+    }
+
+    .Biografias h4{
+        font-size: 1.10rem;
+        float: center;
+    }
+
+    .Historia p{
+        font-size: 1rem;
+        float: center;
+    }
+
+    .Historia h4{
+        font-size: 1.10rem;
+        float: center;
+    }
+    
+    
+    .site-container3{
+        float: center;
+        margin: 2rem auto;
+
+    }
+
+    .article-container3{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(520px,1fr));
+
+
+    }
+
+    .article-card3{
+        width: 600px;
+    }
+
+    .article-content3{
+        width: 600px;
+    }
+
+        
+    .site-container2{
+        float: center;
+        margin: 2rem auto;
+
+    }
+
+    .article-container2{
+        display: relative;
+        grid-template-columns: repeat(auto-fill,minmax(520px,1fr));
+
+
+    }
+
+    .article-card2{
+        width: 600px;
+    }
+
+    .article-content2{
+        width: 600px;
+    }
+
+}
+
+ 
+/* Finalizacion Media Queries*/
+
